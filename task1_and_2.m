@@ -138,3 +138,10 @@ mean_err_rate_train = mean(err_rates_train, 1)
 % that the face is a face, and that the non-face is a non-face, but it's
 % not certain of course. Make sure that the two images are extracted from
 % X_test, and not X_train. Write code for this below! 
+
+IF = X_test(:,4);
+INF = X_test(:,5);
+Face = reshape(IF,19,19); 
+NonFace = reshape(INF,19,19);
+imagesc(Face)
+imagesc(NonFace)
